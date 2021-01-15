@@ -1,0 +1,7 @@
+<?php
+echo'<ul>';
+echo'<li>&copy; Pierre-Olivier LB. </li>';
+echo'<li>Gif fait par <a href="https://giphy.com/ericaofanderson">Erica Anderson</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>';
+echo'</ul>';
+?>
+

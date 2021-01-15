@@ -1,0 +1,35 @@
+<?php
+echo'<header>';
+echo '<h2>Compétences professionnelles</h2>';
+echo'</header>';
+echo'<hr>';
+echo'<section>';
+echo'<article>';
+echo'<h4><i class="icon solid fal fa-file-code"></i> Langages  : </h4>';
+echo '&nbsp;';
+echo'<li><ul><strong>HTML</strong> : HTML4 et HTML5 (Convertissage dans les deux sens).</ul></li>';
+echo'<li><ul><strong>CSS <i class="fab fa-css3-alt"></i></strong> : Modifications visuelles du site (Utilisation des linear gradient pour des effets de fondu de couleur sur ce site, changement de couleur, font, effet de style). </ul></li>';
+echo'<li><ul><strong><i class="fab fa-php"></i></strong> : Tableau de variable, convertissage du HTML en PHP, appel de variable PHP dans le HTML (Ce site est entièrement en php).</ul></li>'; 
+echo'<li><ul><em><i class="fab fa-js"></i> Framework en cours d\'apprentissage :</em>  Jquery (création du compteur caractères dans le formulaire de ce site).</ul></li>';
+echo'<li><ul>Apprentissage par mise en pratique du code en fonction des besoins (Ressources : <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>, <a href="https://developer.mozilla.org/fr/" target="_blank">Developer Mozilla</a>, <a href="https://korben.info/" target="_blank">Korben</a>, <a href="https://www.grafikart.fr/" target="_blank">GrafikArt</a>, etc...).</ul></li>';
+echo'<h3><i class="fas fa-tools"></i> Outils :</h3>';
+echo '&nbsp;';
+echo'<li><ul><strong><i class="icon solid fal fa-edit"></i> &Eacute;diton de texte :</strong><a href="https://code.visualstudio.com/"> Visual Studio Code</a> avec plugins utilitaires.</ul></li>';
+echo'<li><ul><strong><i class="fab fa-github-alt"></i> <a href="https://github.com/pierrolbc">Github </a>:</strong> Permet de stocker et de partager du code avec d\'autres d&eacuteveloppeurs web. Utilisation des commandes git dans le terminal cmd.</ul></li>';
+echo'<li><ul><i class="fas fa-terminal"></i> Utilisation de la console pour débug le code dans Visual Studio et Firefox Developer.</ul></li>';
+echo'<li><ul><strong><i class="fas fa-key"></i> <a href="https://www.liberkey.com/">Liberkey</a> :</strong> Multiples logiciels embarqués sur SSD portable et utilisable sur n\'importe quel poste de travail sans besoin de configuration. Possibilité d\'action immédiate <i class="fas fa-exclamation"></i> </ul></li>';
+echo'<h3>Méthode de travail :</h3>';
+echo '&nbsp;';
+echo'<li><ul><i class="fas fa-lightbulb"></i> Trouver des solutions, faire preuve de créativité et de clarté. </ul></li>';
+echo'<li><ul><i class="fas fa-book-open"></i> Bonne culture générale informatique. (Hardware et Software), mise à jour régulière de mes connaissances sur le web.</ul></li>';
+echo'<li><ul><i class="icon solid far fa-search"></i> L\'autoformation en allant chercher la documentation et en créant un wiki personnel sur le développement web.</ul></li>';
+echo'<h2>Compétences personnelles</h2>';
+echo'<hr>';
+echo'<h3><i class="fas fa-music"></i> Musique</h3>';
+echo '&nbsp;';
+echo'<li><ul><i class="icon solid  fa-headphones-alt"></i> <a href="https://www.ableton.com/en/live/">Ableton</a> (logiciel de création musical) en cours d\'apprentissage dans l\'utilisation d\'un home studio équipé de synthétiseurs.</ul></li>';
+echo'<h3><i class="icon solid fa-camera-retro"></i> Photographie</h3>';
+echo'<li><ul><strong>Matériel utilisé :</strong>  Canon EOS 5D Mark II et objectif 25-50 mm. </ul></li>';
+echo'</article>';
+echo'</section>';
+?>

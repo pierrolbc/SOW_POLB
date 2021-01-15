@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>refresh</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="refresh" content="10; URL=https://www.schoolofweb.tech/" />
+	<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+.proverb {
+    width: 630px;
+    margin: 300px auto;
+    color: white;
+    text-align: justify;
+    
+    
+
+}
+.proverb h1 {
+    text-transform: uppercase;
+    margin: 12px 0;
+    z-index: 5;
+
+}
+
+#orange {
+    color: #F27120;
+}
+.proverb p {
+    font-size: 18px;
+    z-index: 5;
+
+}
+.loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.loader:hover {
+  background: #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+.loader span {
+  position: absolute;
+  display: block;
+}
+.loader span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.loader span:nth-child(3) {
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animate3 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.loader span:nth-child(2) {
+  right: 0;
+  top: -100%;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+.loader span:nth-child(4) {
+  left: 0;
+  top: 100%;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate4 {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+	</style>
+</head>
+
+<body>
+<center>
+	<div class="proverb">
+		<h1>Oops ! <span id="orange">tu t'es fait avoir !</span></h1>
+		<p id="text"></p>
+	</div>
+</center>
+<div class="loader">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+<script>
+	/* Proverbe aléatoire */
+
+var listePhrases = new Array(
+    "Celui qui sait qu'il ne sait pas, &eacute;duque-le. Celui qui sait qu'il sait, &eacute;coute le. Celui qui ne sait pas qu'il sait, &eacute;veille-le. Celui qui ne sait pas qu'il ne sait pas, fuis-le. 🥐",
+    "Tes yeux peuvent voir les &eacute;toiles, mais ils ignorent ton nez parce qu'il est trop pr&egrave;s. 🥐",
+    "Le moment que te donne le hasard vaut mieux que le moment que tu aurais choisi.🥐", "Ne craignez pas d'&ecirc;tre lents, craignez seulement d'&ecirc;tre &agrave; l'arr&ecirc;t.🥐", "Celui qui assiste en spectateur voit clair, celui qui prend parti se laisse &eacute;garer.🥐", "Un imb&eacute;cile qui marche ira toujours plus loin que deux intellectuels assis.🥐", "Personne n'a jamais tout &agrave; fait tord. M&ecirc;me une horloge arr&ecirc;t&eacute;e donne l'heure juste deux fois par jour.🥐");
+
+function getPhrase() {
+    if (listePhrases.length < 1) {
+        document.getElementById("text").innerHTML = "Vous n'avez plus de message ! Il est temps pour vous de rejoindre Croissant City 🥐 !";
+    } else {
+        var text_prov = listePhrases[Math.floor(Math.random() * listePhrases.length)];
+        var pos = listePhrases.indexOf(text_prov);
+        listePhrases.splice(pos, 1);
+        document.getElementById("text").innerHTML = text_prov;
+    }
+}
+window.onload = getPhrase;
+</script>
+</body>
+</html>

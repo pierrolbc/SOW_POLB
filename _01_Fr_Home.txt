@@ -1,0 +1,6 @@
+<?php
+echo'<header>';
+echo'<center><h1>Pierre-Olivier Le Bellec</h1>';
+echo'<p>Bienvenue sur mon Web CV</p>';
+echo'</header>';
+?>

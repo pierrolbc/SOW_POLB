@@ -1,0 +1,20 @@
+<?php
+echo'<header>';
+echo'<h2>Projets</h2>';
+echo'</header>';
+echo'<hr>';
+echo'<p>Je vous présente ici mes projets. Ce site (architecture,visuels, adaptabilité smartphone/tablette/pc) a été conçu avec les connaissances acquises et appliquées lors du TOSA Numérique de l\'AFPA de Brest.</p>';
+echo'<hr>';
+echo'<h3>Projets réalisés lors du TOSA numérique</h3>';
+echo'<br>';
+echo'<section>';
+echo'<article>';
+echo'<center><a class="image"  target=_blank href="images/mozillaresponsive.png"><img src="images/mozillaresponsive_thumb.png" alt="mozillaresponsive"/></a></center>';  
+echo'<p>Exercice de mise en responsive (adaptation de la taille de l\'image en fonction du support)</p>';  
+echo'<center><a class="image"  target=_blank href="images/tableau.png"><img src="images/tableau_thumb.png" alt="tableau"/></a></center>';
+echo'<p>Tableau de valeur sur les planètes du système solaire</p>';
+echo'<center><a class="image"  target=_blank href="images/zim.png"><img src="images/zim_thumb.png" alt="tableau"/></a></center>';
+echo'<p>Extrait de mon wiki personnel sur le développement web</p>';
+echo'</article>';   
+echo'</section>';
+?>

@@ -1,0 +1,21 @@
+<?php
+echo '<header>';
+echo '<h2>Projects</h2>';
+echo '</header>';
+echo '<hr>';
+echo'<p>I present here my projects. This site (architecture, visuals, smartphone/tablet/pc adaptability) has been designed with the knowledge acquired and applied during the Numeric TOSA  of AFPA at Brest.</p>';
+echo '<hr>';
+echo '<h3>Projects carried out during the Numérique TOSA </h3>';
+echo '<br>';
+echo '<section>';
+echo '<article>';
+echo'<center><a class="image" target=_blank href="images/mozillaresponsive.png"><img src="images/mozillaresponsive_thumb.png" alt="mozillaresponsive"/></a></center>';  
+echo'<p>Responsive exercise (adaptation of the image size according to the media)</p>';  
+echo'<center><a class="image" target=_blank href="images/tableau.png"><img src="images/tableau_thumb.png" alt="tableau"/></a></center>';
+echo'<p>Value table on the planets of the solar system</p>';
+echo'<center><a class="image" target=_blank href="images/zim.png"><img src="images/zim_thumb.png" alt="array"/></a></center>';
+echo'<p>Excerpt from my personal wiki on web development</p>';
+echo '</article>';   
+echo '</section>';
+?>
+
